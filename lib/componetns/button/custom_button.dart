@@ -3,9 +3,15 @@ import 'package:flutter_application_1/constants/theme_colors.dart';
 
 class CustomButton extends StatelessWidget {
   final Function tapEvent;
-  const CustomButton({Key key, this.tapEvent}) : super(key: key);
+  final String type;
+  final Icon icon;
+  const CustomButton({Key key, this.tapEvent, this.type, this.icon})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
+    if (type == "icon") {
+      return IconButton(icon: icon, onPressed: tapEvent);
+    }
     return InkWell(
       onTap: tapEvent,
       child: Container(

@@ -6,6 +6,7 @@ class Place {
   final String description;
   final String location;
   final String image;
+  final List<String> photos;
   final double rating;
 
   Place({
@@ -14,6 +15,7 @@ class Place {
     @required this.description,
     @required this.location,
     @required this.image,
+    @required this.photos,
     @required this.rating,
   });
 }
@@ -28,6 +30,13 @@ List<Place> places = [
       location: 'Victoria Harbour, Hong Kong',
       image:
           'https://www.planetware.com/photos-large/HK/hong-kong-star-ferry-sailing.jpg',
+      photos: [
+        "https://i.picsum.photos/id/191/800/800.jpg?hmac=CwFgI0Xl060qvKgKrMxLSLgDQBdKqT-W5yiTPpbwjco",
+        "https://i.picsum.photos/id/559/800/800.jpg?hmac=QagIAMKkgNZr8l3NpyiiB3edxYWVPivCE5fOV3vsNyY",
+        "https://i.picsum.photos/id/729/800/800.jpg?hmac=ecYGHkN87laQVOlHUYRrJaDBDu41aLnW06V8RW_v6KA",
+        "https://i.picsum.photos/id/724/800/800.jpg?hmac=1-eJTxoXhWfl0P2-SEAq2SkmV7vILJU1YD_dwV5wphk",
+        "https://i.picsum.photos/id/535/800/800.jpg?hmac=s9bN4ZI7nrbML3ogbmq4fEYjon1YJLOIGDn42WnT4B8"
+      ],
       rating: 4),
   Place(
       id: 2,
@@ -37,6 +46,13 @@ List<Place> places = [
       location: 'Kowloon, Hong Kong',
       image:
           'https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-skyline-night-with-junk.jpg',
+      photos: [
+        "https://i.picsum.photos/id/191/800/800.jpg?hmac=CwFgI0Xl060qvKgKrMxLSLgDQBdKqT-W5yiTPpbwjco",
+        "https://i.picsum.photos/id/559/800/800.jpg?hmac=QagIAMKkgNZr8l3NpyiiB3edxYWVPivCE5fOV3vsNyY",
+        "https://i.picsum.photos/id/729/800/800.jpg?hmac=ecYGHkN87laQVOlHUYRrJaDBDu41aLnW06V8RW_v6KA",
+        "https://i.picsum.photos/id/724/800/800.jpg?hmac=1-eJTxoXhWfl0P2-SEAq2SkmV7vILJU1YD_dwV5wphk",
+        "https://i.picsum.photos/id/535/800/800.jpg?hmac=s9bN4ZI7nrbML3ogbmq4fEYjon1YJLOIGDn42WnT4B8"
+      ],
       rating: 5),
   Place(
       id: 3,
@@ -46,6 +62,13 @@ List<Place> places = [
       location: 'Lantau Island\s Po Lin monastery, Hong Kong',
       image:
           'https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg',
+      photos: [
+        "https://i.picsum.photos/id/191/800/800.jpg?hmac=CwFgI0Xl060qvKgKrMxLSLgDQBdKqT-W5yiTPpbwjco",
+        "https://i.picsum.photos/id/559/800/800.jpg?hmac=QagIAMKkgNZr8l3NpyiiB3edxYWVPivCE5fOV3vsNyY",
+        "https://i.picsum.photos/id/729/800/800.jpg?hmac=ecYGHkN87laQVOlHUYRrJaDBDu41aLnW06V8RW_v6KA",
+        "https://i.picsum.photos/id/724/800/800.jpg?hmac=1-eJTxoXhWfl0P2-SEAq2SkmV7vILJU1YD_dwV5wphk",
+        "https://i.picsum.photos/id/535/800/800.jpg?hmac=s9bN4ZI7nrbML3ogbmq4fEYjon1YJLOIGDn42WnT4B8"
+      ],
       rating: 4),
   Place(
       id: 4,
@@ -53,6 +76,13 @@ List<Place> places = [
       description:
           'Not everyone thinks of beaches when they think of Hong Kong, but you don\'t have to go far to find some incredible soft-sand beach. The beach at Repulse Bay is the most popular in all of Hong Kong, with beautiful views and a great place for swimming, although it\'s very non touristy.',
       location: 'Repulse Bay, Hong Kong',
+      photos: [
+        "https://i.picsum.photos/id/191/800/800.jpg?hmac=CwFgI0Xl060qvKgKrMxLSLgDQBdKqT-W5yiTPpbwjco",
+        "https://i.picsum.photos/id/559/800/800.jpg?hmac=QagIAMKkgNZr8l3NpyiiB3edxYWVPivCE5fOV3vsNyY",
+        "https://i.picsum.photos/id/729/800/800.jpg?hmac=ecYGHkN87laQVOlHUYRrJaDBDu41aLnW06V8RW_v6KA",
+        "https://i.picsum.photos/id/724/800/800.jpg?hmac=1-eJTxoXhWfl0P2-SEAq2SkmV7vILJU1YD_dwV5wphk",
+        "https://i.picsum.photos/id/535/800/800.jpg?hmac=s9bN4ZI7nrbML3ogbmq4fEYjon1YJLOIGDn42WnT4B8"
+      ],
       image:
           'https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-repulse-bay-beach-afternoon.jpg',
       rating: 3),
